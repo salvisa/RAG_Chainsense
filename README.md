@@ -16,7 +16,7 @@ ChainSense is an advanced project integrating supply chain intelligence with rea
 ### Steps
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/salvisa/RAG_Chainsense.git
     cd chain_sense_project
     ```
 2. Create a virtual environment and activate it:
