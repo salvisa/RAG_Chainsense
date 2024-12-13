@@ -21,7 +21,7 @@ EMBEDDING_MODEL = "text-embedding-ada-002"
 LLM_MODEL = "gpt-4"  # If you don't have GPT-4, use "gpt-3.5-turbo"
 
 # Initialize Pinecone
-pc = Pinecone(api_key=PINECONE_API_KEY)
+pc = Pinecone(api_key='pcsk_4nZeBi_MaH3TTZRqMkCRneSffaxFSNyMAQYeqVLqeDLW79bPjkef9yJCpU8nRqhgxEQrze')
 
 # Ensure supply chain index exists
 if SUPPLY_CHAIN_INDEX not in pc.list_indexes().names():
