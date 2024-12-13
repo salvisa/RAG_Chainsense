@@ -1,5 +1,9 @@
-openai==0.27.0
-pinecone-client==2.2.1
-streamlit==1.26.0
-python-dotenv==1.0.0
-nltk==3.8.1
+openai
+pillow
+pinecone
+selenium
+pinecone-client
+streamlit
+python-dotenv
+nltk
+beautifulsoup4
