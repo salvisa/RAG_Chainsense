@@ -11,12 +11,15 @@ try:
 except ImportError as e:
     print(f"Import error: {e}. Please ensure all required libraries are installed.")
     exit(1)  # Exit if imports fail
+    
 
 # Base URL of Bloomberg
 BASE_URL = "https://www.bloomberg.com"
 
 # Use a Bloomberg search results URL for "supply chain"
 LISTING_URL = "https://www.bloomberg.com/search?query=supply%20chain"
+
+
 
 def get_article_links_with_selenium(listing_url):
     """Fetch article links using Selenium for dynamic content."""
