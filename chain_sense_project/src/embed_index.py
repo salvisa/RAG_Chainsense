@@ -14,7 +14,7 @@ print("PINECONE_API_KEY:", PINECONE_API_KEY)
 print("PINECONE_HOST:", PINECONE_HOST)
 
 # Initialize Pinecone client
-pc = Pinecone(api_key=PINECONE_API_KEY)
+pc = Pinecone(api_key="pcsk_4nZeBi_MaH3TTZRqMkCRneSffaxFSNyMAQYeqVLqeDLW79bPjkef9yJCpU8nRqhgxEQrze")
 
 # Index and embedding model configuration
 INDEX_NAME = "chain-sense-index"
