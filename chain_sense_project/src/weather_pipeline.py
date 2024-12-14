@@ -10,7 +10,7 @@ from utils.embedding_utils import get_embedding
 load_dotenv()
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENV = os.getenv("PINECONE_ENV")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = '=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'
 
 # Ensure OpenAI API key is set
 openai.api_key = OPENAI_API_KEY

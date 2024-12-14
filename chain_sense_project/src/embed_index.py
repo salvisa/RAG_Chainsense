@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Retrieve API keys and host from environment variables
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = '=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'
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_HOST = "https://chain-sense-index-musgrr6.svc.aped-4627-b74a.pinecone.io"
 

@@ -8,7 +8,7 @@ from utils.embedding_utils import get_embedding
 load_dotenv()
 
 # Load API keys and environment details from environment variables
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = '=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'
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENV = os.getenv("PINECONE_ENV")
 
@@ -149,7 +149,7 @@ def answer_query_with_weather(query, location=None):
 # PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 # PINECONE_ENV = os.getenv("PINECONE_ENV")
 
-# openai.api_key = OPENAI_API_KEY
+# openai.api_key = _KEY
 
 # # Our index names
 # SUPPLY_CHAIN_INDEX = "chain-sense-index"
