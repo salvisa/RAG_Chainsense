@@ -7,8 +7,8 @@ from utils.fetch_weather import preprocess_weather_data
 from utils.embedding_utils import get_embedding
 # Load environment variables
 load_dotenv()
-PINECONE_API_KEY = 'pcsk_4nZeBi_MaH3TTZRqMkCRneSffaxFSNyMAQYeqVLqeDLW79bPjkef9yJCpU8nRqhgxEQrze'
-PINECONE_ENV = 'us-east-1'
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_ENV = os.getenv("PINECONE_ENV")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Ensure OpenAI API key is set
 openai.api_key = OPENAI_API_KEY

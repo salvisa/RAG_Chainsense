@@ -8,8 +8,8 @@ load_dotenv()
 
 # Load API keys and environment details from environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-PINECONE_API_KEY = 'pcsk_4nZeBi_MaH3TTZRqMkCRneSffaxFSNyMAQYeqVLqeDLW79bPjkef9yJCpU8nRqhgxEQrze'
-PINECONE_ENV = 'us-east-1'
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_ENV = os.getenv("PINECONE_ENV")
 
 openai.api_key = OPENAI_API_KEY
 
@@ -20,7 +20,7 @@ EMBEDDING_MODEL = "text-embedding-ada-002"
 LLM_MODEL = "gpt-4"  # If you don't have GPT-4, use "gpt-3.5-turbo"
 
 # Initialize Pinecone
-pc = Pinecone(api_key='pcsk_4nZeBi_MaH3TTZRqMkCRneSffaxFSNyMAQYeqVLqeDLW79bPjkef9yJCpU8nRqhgxEQrze')
+pc = Pinecone(api_key=PINECONE_API_KEY)
 
 # Ensure supply chain index exists
 if SUPPLY_CHAIN_INDEX not in pc.list_indexes().names():
